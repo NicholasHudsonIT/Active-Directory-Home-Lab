@@ -48,18 +48,19 @@ We will start by downloading Oracle VM VirtualBox, Windows Server 2019, and Wind
 <p>
 Once we have all the necessary files donwloaded, we are going to create our Virtual Machines using VirtualBox. Once installed, open VirtualBox and we will select "New" and we're going to create our Windows Server 2019 computer first. To keep it simple we're going to name it "DC" for Domain Controller. On the OS "Version" drop down select "Windows 10 (64-bit)" and select continue through and create using the defaults. Once the DC has been created let's go to Settings > Network. Here we're going to create our second NIC for our internal network. Keep the default settings for adapter 1 since our NAT and select adapter 2, here we will check the "Enable Network Adapter" box > Select "Internal Network" from the drop down menu and press okay. We now have our VM configured and we're ready to begin installing our server. Double click on our "DC" and from the drop down locate the Windows Server 2019 ISO file that you downloaded earlier. Once selected press "Start" to run the virtual machine.
 </p>
-<img src="https://i.imgur.com/cGjvRke.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 </p>
-Excellent! We can start creating Organizational Units (OU). Let's first create an OU named _EMPLOYEES. Create another OU named _ADMINS. In order to do that right click on the domain area. Select new->Organizational Unit and fill out the field. Then click inside of your OU and right click, select new and select user and fill out the information for your new user. The user should be named Jane Doe, she is going to be an Admin so her username will be Jane_admin. Lastly add Jane to the domain admins security group. 
+Now we will go through our Windows Setup prompts to create our Administrative User.
 </p>
-<img src="https://i.imgur.com/hL7g5Y5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ybm87mV.png"/>
 <br />
 </p>
-<img src="https://i.imgur.com/kcgvzdE.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-From now on you can use Jane_admin as the administrator account. Now we will join Client-1 to the domain (mydomain.com) from the azure portal we will change client-1's DNS settings to the DC's Private IP address. After you do that restart Client-1 from within the Azure portal. Our picture below shows verification that client-1 is on the DC-1 DNS. 
+Select Windows Server 2019 Standard Evaluation (Desktop Experience)
+<img src="https://i.imgur.com/pZbv43v.png"/>
+<br />
+Select "Custom: Install Windows only (advanced)" to format our VM hard drive and start it from scratch.
 </p>
-<img src="https://i.imgur.com/jbrGTXW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/M7g33ty.png"/>
 <br />
 </p>
 <img src="https://i.imgur.com/kvcm2cY.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
