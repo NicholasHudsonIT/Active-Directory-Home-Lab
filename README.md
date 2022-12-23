@@ -24,7 +24,7 @@ This tutorial outlines the implementation of Active Directory within Windows Ser
 <p>
 </p>
 <p>
-In this lab we will create two Virtual Machines. One will be a Domain Controller using Server 2019, and the other will be the Client machine using Windows 10. We will use two NICs on our Domain Controller, one will connected to our personal home network and we will use the internal network to establish a static IP, then download Active Directory Domain Services on our DC to connect to the client machine. Client machine will be joined to the domain. We will control the DNS settings on the client machine, the client machine will use the DC as its DNS server. We will also add 1,000 active users using a Powershell script that are able to login using our Client machine.
+In this lab we will create two Virtual Machines. One will be a Domain Controller using Windows Server 2019, and the other will be the Client machine using Windows 10. We will use two NICs on our Domain Controller, one will connected to our personal home network and we will use the internal network to establish a static IP, then download Active Directory Domain Services on our DC to connect to the client machine. Client machine will be joined to the domain. We will control the DNS settings on the client machine, the client machine will use the DC as its DNS server. We will also add 1,000 active users using a Powershell script that are able to login using our Client machine.
 </p>
 <br />
 
@@ -32,7 +32,7 @@ In this lab we will create two Virtual Machines. One will be a Domain Controller
 <img src="https://i.imgur.com/lq7jPuC.png"/>
 </p>
 <p>
-DC-1 has to have a static Private IP Address. Client one will connect to DC-1 to ensure connectivity we will try to ping DC-1 from Client-1. At first the ping will not work correctly. We have to enable ICMPv4 on the firewall on DC-1. Now we can ping DC-1 successfully from Client-1
+We will start by downloading Oracle VM VirtualBox, Windows Server 2019, and Windows 10.
 </p>
 <br />
 
