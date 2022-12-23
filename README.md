@@ -37,13 +37,13 @@ We will start by downloading Oracle VM VirtualBox, Windows Server 2019, and Wind
 <br />
 
 <p>
-Download VirtualBox:
+<a href="https://www.virtualbox.org/wiki/Downloads/">Download VirtualBox</a>:
 <img src="https://i.imgur.com/UYvqbj3.png"/>
 </p>
-Download Windows 10:
+<a href="https://www.microsoft.com/en-us/software-download/windows10ISO/">Download Windows 10 ISO</a>:
 <img src="https://i.imgur.com/8vVq8Vy.png"/>
 </p>
-Download Windows Server 2019:
+<a href="https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019/">Download Windows Server 2019 ISO</a>:
 <img src="https://i.imgur.com/oPAOsDt.png"/>
 <p>
 Now we will log back into DC-1 to install AD Users & Computers. Promote the VM to DC, setup a new forest as "mydomain.com" afterwards restart then log back into DC-1 as user: "mydomain.com\labuser". If you performed the steps properly you should be able to run AD Users & Computers as shown below.
