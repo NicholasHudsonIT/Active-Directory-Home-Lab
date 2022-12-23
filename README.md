@@ -94,7 +94,7 @@ Essenentially what we've just done is establish our DC as our DNS server so that
 <img src="https://i.imgur.com/RO4HN5s.png"/>
 </p>
 <p>
-Next we're going to use our PowerShell script to create a lot of users so we don't have to do it manually. <a href="https://github.com/joshmadakor1/AD_PS.../">Add Users w/ PowerShell</a>:
+Next we're going to use our PowerShell script to create a lot of users so we don't have to do it manually. <a href="https://github.com/joshmadakor1/AD_PS.../">Add Users w/ PowerShell</a>: > Save to Desktop for easy access > Start > Windows PowerShell > Right Click > More > Run as Administrator > Enable Execution of all scripts by running "Set-ExecutionPolicy Unrestricted" > Enter > Yes to All.
 </p>
 <br />
 <img src="https://i.imgur.com/EzWG8ug.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
