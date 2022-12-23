@@ -35,7 +35,6 @@ In this lab we will create two Virtual Machines. One will be a Domain Controller
 We will start by downloading Oracle VM VirtualBox, Windows Server 2019, and Windows 10.
 </p>
 <br />
-
 <p>
 <a href="https://www.virtualbox.org/wiki/Downloads/">Download VirtualBox</a>:
 <img src="https://i.imgur.com/UYvqbj3.png"/>
@@ -48,6 +47,7 @@ We will start by downloading Oracle VM VirtualBox, Windows Server 2019, and Wind
 <p>
 Once we have all the necessary files donwloaded, we are going to create our Virtual Machines using VirtualBox. Once installed, open VirtualBox and we will select "New" and we're going to create our Windows Server 2019 computer first. To keep it simple we're going to name it "DC" for Domain Controller. On the OS "Version" drop down select "Windows 10 (64-bit)" and select continue through and create using the defaults. Once the DC has been created let's go to Settings > Network. Here we're going to create our second NIC for our internal network. Keep the default settings for adapter 1 since our NAT and select adapter 2, here we will check the "Enable Network Adapter" box > Select "Internal Network" from the drop down menu and press okay. We now have our VM configured and we're ready to begin installing our server. Double click on our "DC" and from the drop down locate the Windows Server 2019 ISO file that you downloaded earlier. Once selected press "Start" to run the virtual machine.
 </p>
+<img src="https://i.imgur.com/aPt2twJ.png"/>
 <br />
 </p>
 Now we will go through our Windows Setup prompts to create our Administrative User.
@@ -61,7 +61,8 @@ Select "Custom: Install Windows only (advanced)" to format our VM hard drive and
 <img src="https://i.imgur.com/M7g33ty.png"/>
 After the Windows Setup is complete our VM will restart. Once our system is back up we will create a password for our Admin account. To keep it simple during this lab use "Password1" for all our passwords. Our server is now set up.
 <br />
-
+Next, we will set up our IP addressing. If you remember our diagram we have 2 NICs: One dedicated to the internet and the other dedicated for our internal network. The one on the internet will automatically get an IP Address from your home network so we don't have to do anything for that one. But for our Internal Network we will have to set it up manually.
+To begin we'll click the "Network" icon at the bottom right of our desktop. Select Netowork > Change adapter options. Here you'll see two networks that we'll have to distinguish in order to establish the internal network. Rename your internet and internal connections so that they are easily identifiable.
 </p>
 <img src="https://i.imgur.com/kvcm2cY.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
