@@ -110,6 +110,7 @@ After our PowerShell script has been run the last thing we need to do is create 
 <br />
 Install Windows 10. When asked for a product key, select "I Do Not Have a Product Key" > Select Windows 10 Pro > Accept > Custom to select our VM hard drive. Once done installing the system will restart. Click through User Config > Select "I don't have internet" > Continue with limited setup > Click through setup
 <br />
+<br />
 First we want to make sure the internet is working, to do this click Start > Search CMD > In the Command Prompt type "ipconfig" > Enter. You should see an IP Address and a Default Gateway 
 <p>
   <img src="https://i.imgur.com/lTUASMV.png"/>
