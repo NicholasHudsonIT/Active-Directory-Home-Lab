@@ -115,3 +115,7 @@ First we want to make sure the internet is working, to do this click Start > Sea
   <img src="https://i.imgur.com/lTUASMV.png"/>
 </p>
 <br />
+Because we are able to ping to the internet, that means our DNS Server is working. Thus our whole network diagram infrastruscture is working. We have connectivity from our client to the Default Gateway, our Domain Controller. Our Domain Controller is properly NATing and forwarding to the internet and our ping can come back to us as an echo reply.
+<p>
+  <img src="https://i.imgur.com/OZG2EYs.png"/>
+</p>
