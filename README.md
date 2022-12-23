@@ -82,10 +82,12 @@ To use this, let's log out. When we are back on the Windows Login screen, instea
 </p>
 <p>
 To install our RAS/NAT we will go to our Server Manager > Add Roles and Features > Click next to Server Roles keeping defaults > Under Server Roles select "Remote Access" > Click to Roles Services and check "Routing" this will then auto select "DirectAccess and VPN (RAS) > Click through to Install. 
-</p>
+<br />
 Next click on Tools > Routing and Account Access > Configure and Enable Routing and Remote Access > Select Network Address Translation (NAT) > Under NAT Internet Connection ensure that you can see both Internet and Internal network connections that we renamed earlier > Select Internet interface > Finish.
 <br />
+<br />
 Once configured you will see a green circle next to IPv4. Clients will now have access to the internet assuming we set up the client computer correctly for them. To do this we will set up the DHCP server on our Domain Controller with this scope information. This will allow our Windows 10 Clients to get an IP address that will let them get on the internet and browse even though they are on a private internal network, similar to an office or school environment. 
+<br />
 <br />
 Let's return to our Domain Controller > Roles > Click through > Select DHCP Server > Add Features > Next > Install. Now we can set up the Scope. Select Tools > DHCP > Right click IPv4 > New Scope > Name the Scope after our IP range (172.16.0.100-200) > Enter our IP range start: 172.16.0.100 - end: 172.16.0.200 > Change length to 24 so that our subnet mask is now 255.255.255.0 > Click through keeping default settings > Under Router (Default Gateway) enter the Domain Controller's IP address (172.16.0.1) > Add > Click through using defaults > Finish > Right click dc.mydomain.com > Authorize > Right Click refresh.
 <br />
