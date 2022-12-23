@@ -83,7 +83,8 @@ To use this, let's log out. When we are back on the Windows Login screen, instea
 <p>
 To install our RAS/NAT we will go to our Server Manager > Add Roles and Features > Click next to Server Roles keeping defaults > Under Server Roles select "Remote Access" > Click to Roles Services and check "Routing" this will then auto select "DirectAccess and VPN (RAS) > Click through to Install. 
 </p>
-Next click on Tools > Routing and Account Access > Configure and Enable Routing and Remote Access > Select Network Address Translation (NAT) > Under NAT Internet Connection ensure that you can see both Internet and Internal network connections that we renamed earlier > Select Internet interface > Finish
+Next click on Tools > Routing and Account Access > Configure and Enable Routing and Remote Access > Select Network Address Translation (NAT) > Under NAT Internet Connection ensure that you can see both Internet and Internal network connections that we renamed earlier > Select Internet interface > Finish.
+<br />
 Once configured you will see a green circle next to IPv4. Clients will now have access to the internet assuming we set up the computer correctly for them.
 <br />
 
