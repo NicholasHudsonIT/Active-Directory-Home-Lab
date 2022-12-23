@@ -74,7 +74,7 @@ Now that we have established both our NICs, the next thing we are going to do is
 </p>
 <p>
 Login again with our Admin account. Now we're going to create our own Domain Admin account, do that by going to Start > Windows Administrative Tools > Active Directory Users and Computers. Right click on "mydomain.com" > Select New > Organizational Unit (Think of this as a folder within AD to help us organize) > Name is "_ADMINS". Inside of our new _ADMINS folder we will create a new User. Input values for First and Last name and for the username a-"first initial + last name". Click through to Finish. To make this new user an admin, right click > Properties > Member Of > Add > type "domain admins" under object names > Select Check Names > Ok > Apply. Now we have our very own domain admin account.
-</p>
+
 <br />
 To use this, let's log out. When we are back on the Windows Login screen, instead of logging in to the MYDOWMAIN\Admin we're going to go to other user and use our domain admin account (Username: a-nhudson Password: Password1). Next we're going to install RAS/NAT, Remote Access Server/Network Access Translation, to allow our Windows 10 client to be on a private virtual network but still be able to access the internet through the Domain Controller.
 <p>
@@ -97,9 +97,9 @@ Essenentially what we've just done is establish our DC as our DNS server so that
 </p>
 <p>
 Next we're going to use our PowerShell script to create a lot of users so we don't have to do it manually. <a href="https://github.com/joshmadakor1/AD_PS.../">Add Users w/ PowerShell</a>: > Save to Desktop for easy access > Start > Windows PowerShell > Right Click > More > Run as Administrator > Enable Execution of all scripts by running "Set-ExecutionPolicy Unrestricted" > Enter > Yes to All.
-</p>
 <br />
-<img src="https://i.imgur.com/EzWG8ug.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+The script we are running is taking a large quantity of names and creating a username and password.
+<img src="https://i.imgur.com/YlQ0VHP.png"/>
 <p>
 <p>
   <p>
