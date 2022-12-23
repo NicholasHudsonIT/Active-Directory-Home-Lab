@@ -98,14 +98,11 @@ Essenentially what we've just done is establish our DC as our DNS server so that
 <p>
 Next we're going to use our PowerShell script to create a lot of users so we don't have to do it manually. <a href="https://github.com/joshmadakor1/AD_PS.../">Add Users w/ PowerShell</a>: > Save to Desktop for easy access > Start > Windows PowerShell > Right Click > More > Run as Administrator > Enable Execution of all scripts by running "Set-ExecutionPolicy Unrestricted" > Enter > Yes to All.
 <br />
-The script we are running is taking a large quantity of names and creating a username and password.
+The script we are running is taking a large quantity of names and creating a username (first initial + last name) and password.
 <img src="https://i.imgur.com/YlQ0VHP.png"/>
 <p>
+After our PowerShell script has been run the last thing we need to do is create out Windows 10 VirtualBox. On our VirtualBox Manager we're going to create a new VM, similarly to our DC machine. Select New > name "Client 1" > Settings > Network > Adapter 1 > Choose "Internal Network" Adapter > Start "Client 1" VM and select the Windows 10 file that we downloaded in the beginning.
 <p>
-  <p>
-<img src="https://i.imgur.com/Gkpe68K.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/OPKDtTl.png"/>
 </p>
-<img src="https://i.imgur.com/n3gMwQV.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<p>
-As you can see the Powershell script created a user with the username "bab.hubo" We were able to login to Client-1 with his credentials as a normal user. 
-</p>
+<br />
