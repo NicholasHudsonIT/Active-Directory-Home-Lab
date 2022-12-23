@@ -116,6 +116,10 @@ First we want to make sure the internet is working, to do this click Start > Sea
 </p>
 <br />
 Because we are able to ping to the internet, that means our DNS Server is working. Thus our whole network diagram infrastruscture is working. We have connectivity from our client to the Default Gateway, our Domain Controller. Our Domain Controller is properly NATing and forwarding to the internet and our ping can come back to us as an echo reply.
+<br />
+Lastly, we can change the computer name and join the domain at the same time. Start > System > Rename This PC (advanced) > Change > Rename "Client 1" > Select "Member of" and under domain type "mydomain.com". A windows security popup will appear requesting username and password and we can use our normal account username: nhudson password: Password1 > Restart user. 
+<br />
+On our Windows 10 VM we can now login with any of the accounts from our PowerShell script. On the login screen select other user and try any of the user accounts from our script. From our Command Prompt you can enter "whoami" and see that we are a member of "mydomain" and the username will be listed "nhudson"
 <p>
   <img src="https://i.imgur.com/OZG2EYs.png"/>
 </p>
