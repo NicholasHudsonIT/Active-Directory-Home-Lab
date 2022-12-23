@@ -91,6 +91,8 @@ Once configured you will see a green circle next to IPv4. Clients will now have 
 <br />
 Let's return to our Domain Controller > Roles > Click through > Select DHCP Server > Add Features > Next > Install. Now we can set up the Scope. Select Tools > DHCP > Right click IPv4 > New Scope > Name the Scope after our IP range (172.16.0.100-200) > Enter our IP range start: 172.16.0.100 - end: 172.16.0.200 > Change length to 24 so that our subnet mask is now 255.255.255.0 > Click through keeping default settings > Under Router (Default Gateway) enter the Domain Controller's IP address (172.16.0.1) > Add > Click through using defaults > Finish > Right click dc.mydomain.com > Authorize > Right Click refresh.
 <br />
+We want to ensure we have server options, so in our DHCP window > click the drop down on IPv4 > Right click Server Options > check box "003 Router" > add DC IP Address (172.16.0.1) > Add > Apply > right click DHCP server > Restart.
+<br />
 Essenentially what we've just done is establish our DC as our DNS server so that clients can join the domain (mydomain.com).
 <p>
 <img src="https://i.imgur.com/RO4HN5s.png"/>
