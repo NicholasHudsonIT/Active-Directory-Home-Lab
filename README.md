@@ -106,3 +106,4 @@ After our PowerShell script has been run the last thing we need to do is create 
   <img src="https://i.imgur.com/OPKDtTl.png"/>
 </p>
 <br />
+Install Windows 10. When asked for a product key, select "I Do Not Have a Product Key" > Select Windows 10 Pro > Accept > Custom to select our VM hard drive. Once done installing the system will restart. Click through User Config > Select "I don't have internet" > Continue with limited setup
