@@ -94,7 +94,7 @@ Essenentially what we've just done is establish our DC as our DNS server so that
 <img src="https://i.imgur.com/RO4HN5s.png"/>
 </p>
 <p>
-Lastly to verify that noraml users can RDP into Client-1 we will use a script to generate thousands of users into the domain. We will input the script in powershell, after the users are created we will select one and RDP into Client-1.
+Next we're going to use our PowerShell script to create a lot of users so we don't have to do it manually. <a href="https://github.com/joshmadakor1/AD_PS.../">Add Users w/ PowerShell</a>:
 </p>
 <br />
 <img src="https://i.imgur.com/EzWG8ug.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
