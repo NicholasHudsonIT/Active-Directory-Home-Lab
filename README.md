@@ -53,15 +53,15 @@ Once we have all the necessary files donwloaded, we are going to create our Virt
 Now we will go through our Windows Setup prompts to create our Administrative User.
 </p>
 <img src="https://i.imgur.com/ybm87mV.png"/>
-<br />
 </p>
 Select Windows Server 2019 Standard Evaluation (Desktop Experience)
 <img src="https://i.imgur.com/pZbv43v.png"/>
-<br />
 Select "Custom: Install Windows only (advanced)" to format our VM hard drive and start it from scratch.
 </p>
 <img src="https://i.imgur.com/M7g33ty.png"/>
+After the Windows Setup is complete our VM will restart. Once our system is back up we will create a password for our Admin account. To keep it simple during this lab use "Password1" for all our passwords. Our server is now set up.
 <br />
+
 </p>
 <img src="https://i.imgur.com/kvcm2cY.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
