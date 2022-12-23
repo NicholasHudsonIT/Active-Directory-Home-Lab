@@ -68,12 +68,12 @@ To begin we'll click the "Network" icon at the bottom right of our desktop. Sele
 </p>
 <img src="https://i.imgur.com/QfFRUK5.png"/>
 </p>
-Now that we have established both our NICs, the next thing we are going to do is install Active Directory Domain System and we're going to create a domain. Open our Server Manager and select "Add Roles and Features," Keep defaults and when you arrive at Server Roles, select the "Active Directory Domain Services" box. Click through to the confirmation page and select Install. Next we'll create the domain for our Active Directory, under Deployment Configuration select "Add a new forest" > change Root Domain name to "mydomain.com"
+Now that we have established both our NICs, the next thing we are going to do is install Active Directory Domain System and we're going to create a domain. Open our Server Manager and select "Add Roles and Features," Keep defaults and when you arrive at Server Roles, select the "Active Directory Domain Services" box. Click through to the confirmation page and select Install. Next we'll create the domain for our Active Directory, under Deployment Configuration select "Add a new forest" > change Root Domain name to "mydomain.com". Click through with default settings and install. Once finished it will restart the computer for us.
 <p>
   <img src="https://i.imgur.com/uTRAnDd.png"/>
 </p>
 <p>
-We have to join Client-1 to the domain in order to do so navigate to your system settings and go to about. Off to the right select rename this pc (advanced). From there select to change the domain. Enter "mydomain.com" after that enter your credentials from mydomain.com\labuser. Your computer will restart and then client-1 will be a part of mydomain.com
+Login again with our Admin account. Now we're going to create our own Domain Admin account, do that by going to Start > Windows Administrative Tools > Active Directory Users and Computers. Right click on "mydomain.com" > Select New > Organizational Unit (Think of this as a folder within AD to help us organize) > Name is "_ADMINS". Inside of our new _ADMINS folder we will create a new User. Input values for First and Last name and for the username a-"first initial + last name". Click through to Finish. To make this new user an admin, right click > Properties > Member Of > Add > type "domain admins" under object names > Select Check Names > Ok > Apply. Now we have our very own domain admin account.
 </p>
 <br />
 <p>
