@@ -64,6 +64,7 @@ After the Windows Setup is complete our VM will restart. Once our system is back
 <br />
 Next, we will set up our IP addressing. If you remember our diagram we have 2 NICs: One dedicated to the internet and the other dedicated for our internal network. The one on the internet will automatically get an IP Address from your home network so we don't have to do anything for that one. But for our Internal Network we will have to set it up manually.
 <br />
+<br />
 To begin we'll click the "Network" icon at the bottom right of our desktop. Select Netowork > Change adapter options. Here you'll see two networks that we'll have to distinguish in order to establish the internal network. Rename your internet and internal connections so that they are easily identifiable. The next thing we're going to do is assign an IP to our internal network. Right click on our internal network > Select properties > Internet Protocol Version 4 (TCP/IPv4) > Use the following IP address.
 </p>
 <img src="https://i.imgur.com/QfFRUK5.png"/>
