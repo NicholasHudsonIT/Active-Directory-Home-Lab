@@ -4,7 +4,7 @@
 </p>
 
 <h1>How to Setup a Basic Home Lab Running Active Directory Through Oracle Virtual Box</h1>
-This tutorial outlines the implementation of Active Directory within Windows Servers using Virtual Machines.<br />
+This lab tutorial outlines the implementation of Active Directory within Windows Servers using Virtual Machines.<br />
 
 <h2>Environments and Technologies Used</h2>
 
